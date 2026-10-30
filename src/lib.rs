@@ -337,7 +337,7 @@ use bincode::config::{self, Config};
 use io::header::HeaderCodec;
 
 const TIMELINE_PREVIEW_BYTES: usize = 120;
-const MAX_INDEX_BYTES: u64 = 512 * 1024 * 1024; // Increased from 64MB to 512MB for large datasets
+const MAX_INDEX_BYTES: u64 = 512 * 1024 * 1024; // Increased from 64MB to 512MB for large datasets (configurable via features)
 const MAX_TIME_INDEX_BYTES: u64 = 512 * 1024 * 1024;
 const MAX_FRAME_BYTES: u64 = 256 * 1024 * 1024;
 const DEFAULT_SEARCH_TEXT_LIMIT: usize = 32_768;
